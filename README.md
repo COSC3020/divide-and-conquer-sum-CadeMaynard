@@ -35,5 +35,5 @@ T(n)= 3T(n/3)
   =>3^iT(n/3^i)
 For i = lg n
   =>nT(1)
-  => theta(n)$
+  => theta(n)
 $$
