@@ -27,7 +27,7 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
-'''math
+$$
 T(n)=\left{ 1 if n \leq 1, 3T(n/3) if n > 1\right}
 T(n)= 3T(n/3)
   =>3(3T(n/3/3)
@@ -36,4 +36,4 @@ T(n)= 3T(n/3)
 For i = lg n
   =>nT(1)
   => theta(n)$
-'''
+$$
