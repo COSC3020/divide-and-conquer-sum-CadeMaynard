@@ -27,13 +27,27 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
-$$
-T(n)=\left{ 1 if n \leq 1, 3T(n/3) if n > 1\right}
-T(n)= 3T(n/3)
-  =>3(3T(n/3/3)
-  =>9T(n/9)
-  =>3^iT(n/3^i)
-For i = lg n
-  =>nT(1)
-  => theta(n)
-$$
+
+$T(n)= 1$
+if
+$n \leq 1$
+, 
+$3T(n/3)$
+if
+$n > 1$
+<br>
+$T(n)= 3T(n/3)$
+<br>
+$=>3(3T(n/3/3)$
+<br>
+$=>9T(n/9)$
+<br>
+$=>3^iT(n/3^i)$
+<br>
+For $i = Lg(n)$
+<br>
+$=>nT(1)$
+<br>
+$=> \Theta(n)$
+
+The big Theta of this function is n because it does not have any real greater complexity than another sum function involving just incrementing through a list, and that is also a linear function.
