@@ -26,3 +26,28 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+
+$T(n)= 1$
+if
+$n \leq 1$
+, 
+$3T(n/3)+1$
+if
+$n > 1$
+<br>
+$T(n)= 3T(n/3)+1$
+<br>
+$=>3(3)T(n/3/3)+1+1$
+<br>
+$=>9T(n/9)+2$
+<br>
+$=>3^iT(n/3^i+i)$
+<br>
+For $i = Lg(n)$
+<br>
+$=>nT(1)+Lg(n)$
+<br>
+$=> \Theta(n)$
+
+The big Theta of this function is n because it does not have any real greater complexity than another sum function involving just incrementing through a list, and that is also a linear function.
